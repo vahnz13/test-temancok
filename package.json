@@ -1,0 +1,28 @@
+{
+  "name": "webagc",
+  "version": "3.0.0",
+  "description": "Website AGC NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "stop": "pm2 stop agc -f && pm2 stop flush -f",
+    "test": "node agc.js",
+    "start": "node run.js && pm2 list && pm2 log"
+  },
+  "keywords": [],
+  "author": "Abdi Syahputra Harahap",
+  "license": "ISC",
+  "dependencies": {
+    "is-url": "^1.2.4",
+    "is-valid-http-url": "^1.0.3",
+    "jsdom": "^16.6.0",
+    "json-beautify": "^1.1.1",
+    "mime-types": "^2.1.30",
+    "node-cmd": "^5.0.0",
+    "node-gzip": "^1.1.2",
+    "query-string": "^7.0.1",
+    "random-useragent": "^0.5.0",
+    "remove-html-comments": "^1.0.2",
+    "unirest": "^0.6.0",
+    "url-parse": "^1.5.1"
+  }
+}
